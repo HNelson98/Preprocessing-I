@@ -85,7 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -168,6 +167,11 @@ header .headerimg {
   width: 75%;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  header .headerimg {
+    display: none;
+  }
+}
 header h1 {
   font-family: 'Oswald', sans-serif;
   display: flex;
@@ -222,6 +226,11 @@ header button {
   width: 50%;
   border-right: #00CED1 dotted 4px;
 }
+@media (max-width: 500px) {
+  .center .about {
+    font-size: 10px;
+  }
+}
 .center ul {
   list-style: square;
   display: block;
@@ -230,35 +239,60 @@ header button {
   padding: 3%;
   line-height: 2;
 }
+@media (max-width: 500px) {
+  .center ul {
+    font-size: 10px;
+  }
+}
 .bottom {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 20vh;
+  height: 34vh;
   background-color: lightgrey;
   width: 80%;
   margin-left: 5%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .bottom {
+    height: 60vh;
+  }
 }
 .bottom h2 {
   font-family: 'Oswald', sans-serif;
-  display: flex;
-  justify-content: flex-start;
   font-size: 28px;
-  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 10vh;
+  width: 20%;
 }
 .bottom h3 {
   font-size: 29px;
-  border-top: 2px solid #00CED1;
-  border-bottom: 2px solid #00CED1;
+  color: #00CED1;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .bottom h3 {
+    font-size: 20px;
+  }
+}
 .bottom div {
-  display: block;
-  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   color: #008B8B;
-  padding: 3%;
-  align-self: center;
+  align-content: flex-end;
+  width: 29%;
   margin: 2%;
+  line-height: 2;
+}
+@media (max-width: 500px) {
+  .bottom div {
+    font-size: 10px;
+  }
 }
 .bottom .years {
   display: flex;
