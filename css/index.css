@@ -131,19 +131,22 @@ table {
 }
 html,
 body {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   font-family: 'Lato', sans-serif;
-  margin: 3%;
-  width: 100%;
+  margin: 5%;
 }
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 80%;
   font-family: 'Oswald', sans-serif;
-  font-size: 15Kspx;
+  font-size: 15px;
   margin-bottom: 3%;
   padding: 2%;
   border-bottom: 2px solid #00CED1;
+  align-self: center;
   /*closing of a*/
 }
 nav a {
@@ -155,10 +158,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-left: 5%;
   width: 80%;
   padding: 3%;
   background-color: lightgrey;
+  align-self: center;
 }
 header .headerimg {
   display: block;
@@ -205,11 +208,17 @@ header button {
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
-  margin-left: 5%;
   width: 75%;
   padding: 3%;
-  height: 30vh;
+  height: 50vh;
   margin: 2%;
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .center {
+    flex-wrap: nowrap;
+    height: 100vh;
+  }
 }
 .center h2 {
   font-family: 'Oswald', sans-serif;
@@ -228,7 +237,8 @@ header button {
 }
 @media (max-width: 500px) {
   .center .about {
-    font-size: 10px;
+    width: 100%;
+    border: none;
   }
 }
 .center ul {
@@ -239,72 +249,61 @@ header button {
   padding: 3%;
   line-height: 2;
 }
-@media (max-width: 500px) {
+@media (max-width 500px) {
   .center ul {
-    font-size: 10px;
+    padding: 5%;
   }
 }
 .bottom {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 34vh;
+  align-content: center;
+  height: 40vh;
   background-color: lightgrey;
   width: 80%;
-  margin-left: 5%;
+  align-self: center;
   padding: 2%;
 }
 @media (max-width: 500px) {
   .bottom {
-    height: 60vh;
+    height: 30vh;
   }
 }
 .bottom h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 28px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   height: 10vh;
-  width: 20%;
-}
-.bottom h3 {
-  font-size: 29px;
-  color: #00CED1;
-  width: 100%;
-}
-@media (max-width: 500px) {
-  .bottom h3 {
-    font-size: 20px;
-  }
+  width: 80%;
+  margin: 1%;
+  margin-left: 10%;
 }
 .bottom div {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   color: #008B8B;
-  align-content: flex-end;
-  width: 29%;
-  margin: 2%;
-  line-height: 2;
+  align-content: center;
+  width: 80%;
+  height: 35vh;
+  margin: 1%;
+  margin-left: 10%;
 }
-@media (max-width: 500px) {
-  .bottom div {
-    font-size: 10px;
-  }
-}
-.bottom .years {
+.bottom p {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 29%;
+  justify-content: center;
+  text-align: inherit ;
+  width: 80%;
+  margin: 1%;
+  padding: 1%;
+  border-bottom: 1px solid #00CED1;
 }
 footer {
   display: block;
   font-size: 19px;
   color: #008B8B;
   padding: 3%;
-  align-self: center;
+  width: 80%;
 }
