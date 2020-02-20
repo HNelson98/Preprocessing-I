@@ -133,4 +133,144 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Lato', sans-serif;
+  margin: 3%;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15Kspx;
+  margin-bottom: 3%;
+  padding: 2%;
+  border-bottom: 2px solid #00CED1;
+  /*closing of a*/
+}
+nav a {
+  color: #008B8B;
+}
+/*closing of nav*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: 5%;
+  width: 80%;
+  padding: 3%;
+  background-color: lightgrey;
+}
+header .headerimg {
+  display: block;
+  align-self: center;
+  height: 33vh;
+  width: 75%;
+  margin-bottom: 2%;
+}
+header h1 {
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding-bottom: 2%;
+  border-bottom: 4px dotted #00CED1;
+}
+header p {
+  display: block;
+  align-self: center;
+  width: 70%;
+  font-size: 19px;
+  color: #008B8B;
+  padding: 3%;
+}
+header a {
+  display: block;
+  align-self: center;
+}
+header button {
+  height: 6vh;
+  width: 86%;
+  border-radius: 10px;
+  background-color: #008B8B;
+  color: #00CED1;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  margin-left: 5%;
+  width: 75%;
+  padding: 3%;
+  height: 30vh;
+  margin: 2%;
+}
+.center h2 {
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 28px;
+  margin-bottom: 2%;
+}
+.center .about {
+  display: block;
+  font-size: 19px;
+  color: #008B8B;
+  padding: 3%;
+  width: 50%;
+  border-right: #00CED1 dotted 4px;
+}
+.center ul {
+  list-style: square;
+  display: block;
+  font-size: 19px;
+  color: #008B8B;
+  padding: 3%;
+  line-height: 2;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 20vh;
+  background-color: lightgrey;
+  width: 80%;
+  margin-left: 5%;
+}
+.bottom h2 {
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 28px;
+  margin-bottom: 2%;
+}
+.bottom h3 {
+  font-size: 29px;
+  border-top: 2px solid #00CED1;
+  border-bottom: 2px solid #00CED1;
+  width: 100%;
+}
+.bottom div {
+  display: block;
+  font-size: 19px;
+  color: #008B8B;
+  padding: 3%;
+  align-self: center;
+  margin: 2%;
+}
+.bottom .years {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 29%;
+}
+footer {
+  display: block;
+  font-size: 19px;
+  color: #008B8B;
+  padding: 3%;
+  align-self: center;
 }
